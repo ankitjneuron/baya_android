@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue"
+        android:id="@+id/header">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:background="#00000000"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Listing"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/header"
+    android:background="#F0F0F0"
+    android:id="@+id/toplayout">
+<TextView
+    android:id="@+id/heading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fill and submit the information in order to add business listing"
+    android:gravity="center_horizontal"
+    android:layout_centerInParent="true"
+    android:textColor="@color/dark_gray"
+
+    android:padding="20dp"/>
+
+</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplayout"
+        android:layout_marginBottom="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:id="@+id/middle_layout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_name"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rectangle"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Business Name"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_category"
+            android:padding="10dp"
+            android:drawableRight="@drawable/drop"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:hint="Business Category"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_neighour"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Neighbour"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_phone"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Phone"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_address"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_city"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="City"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_state"
+            android:padding="10dp"
+            android:hint="State"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/drop"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/business_zip_code"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:maxLength="5"
+            android:hint="Zipcode"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rectangle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:background="#199AD9"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Submit"
+            android:textColor="#D4EBF8" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

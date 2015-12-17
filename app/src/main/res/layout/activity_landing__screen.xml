@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baya.Landing_Screen">
+
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_gradient">
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="Find a Doctor"
+            android:textColor="#FDFEFF"
+            android:textSize="15dp" />
+        <ImageButton android:id="@+id/imagessidesdrawer"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:onClick="leftshow"
+            android:padding="10dp"
+            android:background="@drawable/side_menu"
+            android:layout_gravity="center_vertical"
+         />
+        <ImageButton android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1sp"
+            android:padding="13sp"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            />
+        <ImageView android:id="@+id/language_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="1sp"
+            android:padding="5sp"
+            android:src="@drawable/language"
+
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+
+
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="50dp"
+            />
+
+
+
+
+
+
+
+</FrameLayout>

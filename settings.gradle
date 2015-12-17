@@ -1,0 +1,2 @@
+include ':app', ':facebook', ':pageindicator', ':com.menorking.android', 'slidingmenu', ':library', ':headerliberary', ':swipelistviewLibrary', ':libraryPTR'
+include ':swipeMenuListViewLibrary'

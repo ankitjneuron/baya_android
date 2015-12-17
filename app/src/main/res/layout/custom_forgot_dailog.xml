@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"   >
+
+    <RelativeLayout
+        android:id="@+id/dialog_text"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_xml_for_dialog_forgot_password"
+        android:padding="15dp"   >
+
+        <TextView
+            android:id="@+id/forget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="Forgot Password?"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forget_text"
+            android:gravity="center_horizontal"
+            android:text="Enter your email address to request \n a password reset."
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" android:paddingBottom="20dp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/message2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/message"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:paddingBottom="20dp"-->
+            <!--android:text="a password reset."-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="15dp"-->
+
+
+            <!--/>-->
+
+
+        <EditText
+            android:id="@+id/edittext_log_forgotpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ractangleedittext"
+            android:hint="Enter your email address"
+            android:drawableLeft="@drawable/user"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:drawablePadding="13sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LoginButtonImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_text"
+        android:orientation="horizontal"
+        android:weightSum="2"   >
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:width="5dp"
+            android:background="#FFFFFF"
+            android:text="Cancel"
+            android:textColor="#9A9A9A"
+            android:textSize="13sp"/>
+<RelativeLayout android:id="@+id/r_layout"
+    android:layout_width="0.8dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="0.02"
+    android:layout_marginTop="13dp"
+    android:layout_marginBottom="13dp"
+    android:background="#c2c2c2"
+    ></RelativeLayout>
+        <Button
+            android:id="@+id/Request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.99"
+            android:width="5dp"
+            android:background="#FFFFFF"
+            android:text="Request"
+            android:textColor="#9A9A9A"
+android:textSize="13sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

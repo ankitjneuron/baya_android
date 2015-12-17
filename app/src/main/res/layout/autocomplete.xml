@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/blue_gradients">
+        <!--<Texts-->
+</RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tlayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_edittext_for_dailog"
+        android:drawableLeft="@drawable/search_buisness"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:padding="13dp"  >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+</RelativeLayout>

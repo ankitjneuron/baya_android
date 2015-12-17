@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_gradient"
+         android:paddingBottom="60dp"
+        android:paddingTop="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forget_text"
+                android:gravity="center_horizontal"
+                android:text="Congratulations, You have "
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/message2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                 android:text="successfully made an appointment"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:padding="5dp"
+                />
+            <TextView
+                android:id="@+id/message3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message2"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                 android:text="with BAYA"
+                  android:textColor="#FFFFFF"
+                android:textSize="18dp"
+              />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+         android:background="@drawable/circle_image_success"
+        android:src="@drawable/success"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerInParent="true"
+        android:text="Booking Detail"
+        android:padding="8dp"
+        android:textSize="20dp"
+
+        android:textColor="#179AD8"
+        android:id="@+id/booking_details"
+        />
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booking_details"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clinic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Elite Dental Care"
+         android:textSize="15dp"
+
+        android:drawablePadding="8dp"
+         android:id="@+id/buisness_name"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay"
+        android:id="@+id/date_n_time"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:paddingBottom="20dp"
+         >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:text="00-00-00"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t"
+            android:text="\@"
+            android:padding="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text="00-00"
+            android:padding="5dp"
+            />
+
+        </LinearLayout>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ok"
+    android:id="@+id/okbutton"
+    android:background="#199AD9"
+    android:layout_below="@+id/date_n_time"
+    android:gravity="center_horizontal"
+    android:padding="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+    android:layout_below="@+id/okbutton"
+
+        android:padding="5dp"
+        />
+</RelativeLayout>

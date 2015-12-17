@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="13sp">
+
+    <RelativeLayout
+        android:id="@+id/r_buisnesslistings_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+android:padding="13sp"
+        >
+
+        <ImageView
+            android:id="@+id/imageview_buisnesslistings_images"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/xdefault"
+       />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r_buisnesslistings_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13sp"
+        android:layout_toRightOf="@+id/r_buisnesslistings_image"
+      >
+
+        <TextView
+            android:id="@+id/textview_buisnesslistings_nam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.8dp"
+            android:layout_marginTop="5sp"
+            android:layout_toLeftOf="@+id/textview_buisnesslistings_bookings"
+            android:paddingBottom="2dp"
+            android:text="Elite Dental Care"
+            android:textColor="#18a1d8"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textview_buisnesslistings_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textview_buisnesslistings_nam"
+            android:layout_below="@+id/textview_buisnesslistings_nam"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13sp"
+            android:drawableLeft="@drawable/specialty"
+            android:drawablePadding="2sp"
+            android:gravity="center"
+            android:layout_marginTop="5sp"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            android:text="General Dentistry,Cosmetic Dentists"
+            android:textColor="#525252"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textview_buisnesslistings_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_buisnesslistings_appointment"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13sp"
+            android:drawableLeft="@drawable/address"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5sp"
+            android:singleLine="true"
+            android:text="Washington Square, San Fransisco, CA 94133"
+            android:textColor="#525252"
+            android:textSize="13sp" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/buttom_buisnesslistings_booknow" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBottom="@+id/textview_buisnesslistings_nam" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignParentTop="true" -->
+        <!-- android:layout_marginRight="13sp" -->
+        <!-- android:background="#18a1d8" -->
+        <!-- android:paddingBottom="2dp" -->
+        <!-- android:paddingLeft="5sp" -->
+        <!-- android:paddingRight="5sp" -->
+        <!-- android:paddingTop="2dp" -->
+        <!-- android:text="Book Now" -->
+        <!-- android:textColor="#ffffff" -->
+        <!-- android:textSize="9dp" -->
+        <!-- android:textStyle="bold" /> -->
+
+        <TextView
+            android:id="@+id/textview_buisnesslistings_bookings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textview_buisnesslistings_address"
+            android:layout_alignParentRight="true"
+            android:background="#18a1d8"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:layout_marginTop="5sp"
+            android:paddingTop="2dp"
+            android:text="Book Now"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

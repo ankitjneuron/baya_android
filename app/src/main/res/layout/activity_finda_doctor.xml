@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/mainlayout"
+    tools:context="baya.com.user.demopageindicator.FindaDoctor">
+
+            <RelativeLayout
+                android:id="@+id/find_doctor_action_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentTop="true"
+                android:background="#199AD9" android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/find_doctor_back_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="13sp"
+                    android:background="#00000000"
+                    android:src="@drawable/back"
+                   />
+
+                <TextView
+                    android:id="@+id/find_doctor_content_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:text="Find a Buisness"
+                    android:textColor="#FDFEFF"
+             />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/find_doctor_search_name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:background="#FFFFFF"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/find_doctor_search_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ractangleedittext"
+                    android:drawableLeft="@drawable/search_buisness"
+                    android:drawablePadding="5dp"
+                    android:hint="Search a Business or Doctor"
+                    android:drawableRight="@drawable/submitsubmit"
+                    android:padding="10dp" android:textSize="13sp"
+                    android:singleLine="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/find_doctor_location_name_edt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/find_doctor_search_name_layout">
+
+                <TextView
+                    android:id="@+id/find_doctor_select_loction_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#199AD9"
+                    android:padding="6dp"
+                    android:text="Select Location"
+                    android:textColor="#FDFEFF"
+                 android:layout_centerVertical="true"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/loaction_edit_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/find_doctor_location_name_edt"
+                android:background="#FFFFFF"
+                android:padding="8dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/find_doctor_search_location_edt" android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ractangleedittext"
+                    android:drawableLeft="@drawable/location"
+                    android:drawablePadding="5dp"
+                    android:hint="Search a Location"
+                    android:padding="10dp"
+                    android:singleLine="true"/>
+            </RelativeLayout>
+              <RelativeLayout
+                android:id="@+id/find_doctor_select_speciality_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loaction_edit_txt">
+
+                <TextView
+                    android:id="@+id/find_doctor_select_speciality_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#199AD9"
+                    android:padding="6dp"
+                    android:text="Select Speciality"
+                    android:textColor="#FDFEFF"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+             <RelativeLayout
+                android:id="@+id/find_doctor_gridview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/find_doctor_select_speciality_layout"
+                android:layout_above="@+id/submit_area"
+                >
+                 <GridView
+                     android:numColumns="3"
+                    android:gravity="center"
+                    android:stretchMode="columnWidth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/find_doctor_gridview"
+                    android:choiceMode="singleChoice">
+                     </GridView>
+             </RelativeLayout>
+      <TextView
+        android:id="@+id/submit_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="#199AD9"
+        android:gravity="center_horizontal|center" android:textStyle="bold"
+        android:text="Find"
+        android:textColor="#D4EBF8" />
+
+
+</RelativeLayout>
+
+
+

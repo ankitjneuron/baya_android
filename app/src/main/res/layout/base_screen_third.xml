@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash03">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_logo"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/view"
+        android:layout_marginBottom="30dp"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/find_doctor_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerInParent="true"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:src="@drawable/reminders" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/find_doctor_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_doctor_logo"
+        android:layout_centerInParent="true"
+        android:text="APP REMINDERS"
+        android:textColor="#131515"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/find_doctor_txt_a"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_doctor_txt"
+        android:layout_centerInParent="true"
+        android:singleLine="false"
+
+        android:text="Find a near by doctor and book \n an appointment instantly.And \nit's free!"
+        android:textColor="#131515" android:layout_marginTop="13sp"/>
+
+    <!--<TextView
+        android:id="@+id/find_doctor_txt_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_doctor_txt_a"
+        android:layout_centerInParent="true"
+        android:singleLine="false"
+        android:text="an appointment instantly.And its free!"
+        android:textCo-->
+
+    <LinearLayout
+        android:id="@+id/LoginButtonImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:width="5dp"
+            android:background="#199AD9"
+            android:text="@string/login"
+            android:textColor="#D4EBF8"
+
+            />
+
+        <Button
+            android:id="@+id/singup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:width="5dp"
+            android:background="#199AD9"
+            android:text="Sign Up"
+            android:textColor="#D4EBF8" />
+    </LinearLayout>
+
+
+</RelativeLayout>

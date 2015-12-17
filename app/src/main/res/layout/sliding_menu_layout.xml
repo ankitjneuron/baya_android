@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:id="@+id/logoLayout"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+
+                >
+                 <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/default_profile"
+                    android:id="@+id/user_image"
+                     android:layout_centerVertical="true"
+                      android:background="@drawable/circle_image_view"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit"
+                    android:background="@drawable/edit"
+                    android:layout_below="@+id/user_name_txt"
+                    android:layout_alignRight="@+id/user_image"
+                    android:layout_alignEnd="@+id/user_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_name_txt"
+                    android:text="Username"
+                    android:textSize="20dp"
+                     android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:layout_toEndOf="@+id/user_image"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                     />
+            </RelativeLayout>
+
+            <!--upcomming Appointment TestView-->
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forAppoitment"
+                android:background="#00ffff"
+                android:layout_below="@+id/logoLayout">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Upcoming Appointment"
+                    android:background="#199AD9"
+                    android:textColor="#FDFEFF"
+                    android:padding="8dp"
+                    android:textSize="15dp"
+                    android:id="@+id/textview_menuupcoming_appointm"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <!--List View layout for item-->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forAppoitment"
+                android:id="@+id/list_item">
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listview" />
+            </RelativeLayout>
+            <!--textView layout for Menu-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menu"
+                android:layout_below="@+id/list_item"
+
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textview_menu"
+                    android:text="  Menu"
+                    android:background="#199AD9"
+                    android:padding="8dp"
+                    android:textSize="15dp"
+                    android:textColor="#FDFEFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listlist"
+                android:layout_below="@+id/menu">
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/llist" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

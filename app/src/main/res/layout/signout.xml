@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/white_rounded_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+       >
+
+        <TextView
+            android:id="@+id/textview__header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="13sp"
+            android:text="Logout"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:layout_below="@+id/textview__header"
+            android:background="#cccccc" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:layout_below="@+id/textview__messages"
+            android:background="#cccccc" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview__messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview__header"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="18sp"
+            android:text="Are you sure you want to logout?"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview__messages"
+             >
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/framelayout"
+                android:background="#00000000"
+                android:gravity="center"
+                android:padding="13sp"
+                android:text="Stay In"
+                android:textColor="#ff0000"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="0.9dp"
+                android:layout_height="39sp"
+                android:layout_centerInParent="true"
+                android:background="#e2e2e2"
+                android:clipToPadding="true"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:layoutMode="clipBounds" >
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/framelayout"
+                android:background="#00000000"
+                android:gravity="center"
+                android:padding="13sp"
+                android:text="Sign Out"
+                android:textColor="#199AB8"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

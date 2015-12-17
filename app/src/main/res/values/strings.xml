@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Baya</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_landing__screen">Landing_Screen</string>
+    <string name="Signup">Sign up</string>
+    <string name="Or">Or</string>
+    <string name="Signin">Sign in</string>
+    <string name="UserName">USER NAME</string>
+    <string name="Password">PASSWORD</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="title_activity_sign__up">Sign_Up</string>
+    <string name="title_activity_finda_doctor">FindaDoctor</string>
+    <string name="left_and_right">Left and Right</string>
+    <string name="title_activity_book_appointment">BookAppointment</string>
+    <string name="title_activity_book_with_confirm_appointment">BookWithConfirmAppointment</string>
+    <string name="gcm">621615026258</string>
+    <string name="id">1639596282959683</string>
+
+
+    <string name="cancelled">Cancelled</string>
+    <string name="ok">OK</string>
+    <string name="permission_not_granted">Permission not granted...</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Post ID: %1$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="shopsearchs">Shop for Groceries.</string>
+    <string name="serachby">Search by stores, products and categories.</string>
+    <string name="remove_product">Do you want to remove all product from the basket?</string>
+    <string name="serachgroceries">Search for groceries!</string>
+
+    <string-array name="days_array">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <!--Calender Strings-->
+    <string name="previous_month_placeholder">&lt;&lt;</string>
+    <string name="next_month_placeholder">&gt;&gt;</string>
+
+
+</resources>

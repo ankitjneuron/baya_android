@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout android:id="@+id/r_layoutbuisnesslistings"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="@drawable/blue_gradient">-->
+    <!--<ImageView android:id="@+id/imageview_buisnesslistings_menu"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/side_menu"-->
+    <!--android:padding="13sp" />-->
+    <!--<TextView android:id="@+id/textview_buisnessliststitle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="#F5F2F2"-->
+    <!--android:text="Buisness Listings" android:textSize="13sp"-->
+    <!--android:padding="13sp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--/>-->
+    <!--<ImageView android:id="@+id/imageview_buisnesslistsfilter"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/filter"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="13sp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:padding="13sp"-->
+    <!--android:layout_marginLeft="13sp"/>-->
+    <!--</RelativeLayout>-->
+    <TextView
+        android:id="@+id/noitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Business Available"
+        android:visibility="gone"
+        android:textColor="@color/blue" android:padding="5sp"
+        android:textSize="11sp" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#bbbbbb" android:layout_alignParentTop="true"
+
+        android:dividerHeight="0.9sp" android:layout_above="@+id/add_listing"></ListView>
+    <TextView
+        android:id="@+id/add_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:background="#199AD9"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@+id/relativeprogress"
+        android:text="Add Business"
+        android:textColor="#D4EBF8" />
+    <RelativeLayout
+        android:id="@+id/relativeprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#199AD9">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" android:padding="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/progress"
+            android:text="loading..."
+            android:textColor="@color/button_txt_color1" android:padding="5sp"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</RelativeLayout>

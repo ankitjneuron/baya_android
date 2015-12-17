@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/date_layout"
+
+    android:layout_centerInParent="true"
+    >
+
+    <TextView android:id="@+id/date"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="12"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+
+
+        />
+    <TextView android:id="@+id/date2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="12"
+
+        android:visibility="gone"
+        android:padding="5dp"
+        android:drawableBottom="@drawable/dot"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+
+
+        />
+    <TextView android:id="@+id/datetwodot"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:textSize="12sp"
+    android:textStyle="bold"
+    android:text="12"
+        android:padding="5dp"
+    android:visibility="gone"
+    android:drawableBottom="@drawable/dot01"
+    android:gravity="center"
+    android:textColor="#FFFFFF"
+
+
+    />
+    <TextView android:id="@+id/datethreedot"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="12"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:drawableBottom="@drawable/dot02"
+
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+
+
+        />
+</RelativeLayout>

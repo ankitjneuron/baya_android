@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_layout"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+         >
+         <com.baya.Helper.FlowLayout
+            android:id="@+id/test_flow_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            >
+         </com.baya.Helper.FlowLayout>
+    </RelativeLayout>
+</RelativeLayout>

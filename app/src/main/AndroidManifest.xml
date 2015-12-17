@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baya" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.bazr.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.R" />
+
+    <permission
+        android:name="com.baya.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.baya.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application android:name=".WebServices.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+        <activity
+            android:name=".BaseScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.baya" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.baya.GCMIntentService" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Landing_Screen"
+            android:label="@string/title_activity_landing__screen"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign__up"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BookAppointment"
+            android:label="@string/title_activity_book_appointment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AppointmentDetail"
+            android:label="@string/title_activity_book_appointment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BookAppointment_Detail"
+            android:label="@string/title_activity_book_appointment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SelectDoctor"
+            android:label="@string/title_activity_book_with_confirm_appointment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".BusinessProfile"></activity>
+        <activity android:name=".FindaBuisness"  android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait"></activity>
+<service android:name="com.baya.Helper.GPSTracker"
+    android:enabled="true"
+    android:exported="true"></service>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".Profile"
+            android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity android:name=".ChangePassword"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Bussiness_Available_slots"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Upcomingappointment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddListing"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
