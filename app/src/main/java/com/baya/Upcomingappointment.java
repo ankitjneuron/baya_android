@@ -28,7 +28,6 @@ import com.baya.ApiRequest.RequestCompleteListener;
 import com.baya.ApiRequest.VolleyRequest;
 import com.baya.BeanClass.AppointmentBean;
 import com.baya.Helper.Constants;
-import com.baya.Helper.IndexView;
 import com.baya.WebServices.URL;
 
 import org.json.JSONArray;
@@ -56,7 +55,7 @@ public class Upcomingappointment extends Activity implements RequestCompleteList
     private SharedPreferences preferences;
     private ArrayList<AppointmentBean> mAppList;
     SwipeMenuListView stlist;
-    IndexView indexView;
+
     TextView selectIndex;
     private ImageButton back;
 

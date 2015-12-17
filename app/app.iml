@@ -105,12 +105,9 @@
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.1.0" level="project" />
     <orderEntry type="library" exported="" name="httpmime-4.3" level="project" />
-    <orderEntry type="module" module-name="libraryPTR" exported="" />
     <orderEntry type="module" module-name="facebook" exported="" />
     <orderEntry type="module" module-name="slidingmenu" exported="" />
-    <orderEntry type="module" module-name="swipelistviewLibrary" exported="" />
     <orderEntry type="module" module-name="pageindicator" exported="" />
-    <orderEntry type="module" module-name="headerliberary" exported="" />
     <orderEntry type="module" module-name="library" exported="" />
   </component>
 </module>
